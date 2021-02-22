@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>City Block | CSS</title>
+    <style>
+        body{
+            background-color: #223;
+        }
+        .street{
+            border: 1px dotted red;
+        }
+        .house{
+            width: 100px; 
+            height: 150px;
+            display: inline-block;
+        }
+        .house-roof{
+            height: 0px;
+            width: 0px;
+          /*  background-color: red;*/
+            border: 50px solid white;
+            border-top: 0px;
+            border-bottom-color: brown;
+            border-left-color: transparent;
+            border-right-color: transparent;
+            border-bottom-width: 70px;
+
+        }
+        .house-wall{
+           background-color:  antiquewhite ;  
+           height: 80px;          
+        }
+        .house-window{
+           height: 30px; 
+           width:  30px;
+           border: 2px solid brown;
+           transform: translateX(33px) translateY(23px);
+        }
+        .building-tall{
+            display: inline-block;
+            height: 300px;
+            width: 100px;
+            background-color:beige ;
+             
+        }
+        .building-small{
+            display: inline-block;
+            height: 100px;
+            width: 300px;
+            background-color:beige ;
+            margin-left: -40px;
+            border-top: 10px solid aqua;
+        }
+        .winsmall1{
+           height: 30px; 
+           width:  220px;
+           border: 2px solid brown;
+           transform: translateX(33px) translateY(13px);
+        }
+        .winsmall2{
+           height: 30px; 
+           width:  220px;
+           border: 2px solid brown;
+           transform: translateX(33px) translateY(23px);
+        }
+        .wintall1{
+            
+           height: 120px; 
+           width:  20px;
+           border: 2px solid aqua;
+           transform: translateX(38px) translateY(13px);
+        }
+        .wintall2{
+           height: 120px; 
+           width:  20px;
+           border: 2px solid aqua;
+           transform: translateX(38px) translateY(23px);
+        }
+        .cloud{
+            display: inline-block;
+            width: 80px;
+            vertical-align: top;
+            padding-left: 0px;
+            padding-top: 0px;
+            transform: translateX(-20px) translateY(-10px);
+        }
+        .cloud2{
+            display: inline-block;
+            width: 80px;
+            vertical-align: top;
+            padding-left: 0px;
+            padding-top: 0px;
+            transform: translateX(-100px) translateY(-30px);
+        }
+        .cloud3{
+            display: inline-block;
+            width: 80px;
+            vertical-align: top;
+            padding-left: 0px;
+            padding-top: 0px;
+            transform: translateX(-20px) translateY(-50px);
+        }
+        #palm{
+            display: inline-block;  
+            height: 250px;
+           
+            
+        }
+        .palm{
+            display: inline-block;
+           
+            }
+        
+    </style>
+</head>
+<body>
+    <div class="street">
+       
+        <div class="house">
+          <div class="house-roof">
+
+          </div>
+          <div class="house-wall">
+              <div class="house-window">
+              </div>
+          </div>
+         </div>
+         <div class="building-tall">
+            <div class="wintall1"></div>
+            <div class="wintall2"></div>
+         </div>
+         <div class="cloud">
+              <img src="images/cloud-icon.png" alt="">
+              <div class="cloud2"> <img src="images/cloud-icon.png" alt=""></div>
+              <div class="cloud3"> <img src="images/cloud-icon.png" alt=""></div>
+            </div>
+         
+         <div class="building-small">
+            <div class="winsmall1"></div>
+            <div class="winsmall2"></div>
+        </div>
+        <div class="palm"><img id="palm" src="images/palm.png" alt=""></div>
+    </div>
+    
+</body>
+</html>
